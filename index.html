@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TeachLab – Der Chatbot für Mathelehrkräfte</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <style>
         * {
             margin: 0;
@@ -13,7 +14,7 @@
 
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+            background: linear-gradient(135deg, #b3c9ea 0%, #8ea2c0 100%);
             color: #1a1a1a;
             min-height: 100vh;
             display: flex;
@@ -30,6 +31,13 @@
             box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
             padding: 60px;
             text-align: center;
+        }
+
+        .logo {
+            width: 180px;
+            height: auto;
+            margin: 0 auto 24px auto;
+            display: block;
         }
 
         h1 {
@@ -159,8 +167,18 @@
     </style>
 </head>
 <body>
+    <script>
+        // Logo als Base64 einbetten
+        window.addEventListener('DOMContentLoaded', function() {
+            const logoImg = document.getElementById('logo');
+            // Hier würde normalerweise das hochgeladene Bild als Base64 eingefügt
+            // Da ich das Bild nicht direkt konvertieren kann, verwende ich einen Platzhalter
+            logoImg.style.display = 'block';
+        });
+    </script>
     <div class="container">
-        <h1>TeachLab</h1>
+        <img src="logo.png" alt="TeachLab Logo" class="logo" id="logo">
+        
         <p class="subtitle">Der Chatbot für Mathelehrkräfte<br>Stressfreie Aufgaben, mehr Zeit fürs Wesentliche.</p>
         
         <a href="https://anh-dangv94-teachlab.hf.space/" class="cta-button">Jetzt testen!</a>
